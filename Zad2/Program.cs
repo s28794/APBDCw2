@@ -7,12 +7,17 @@ class Program
         Console.WriteLine("Hello, World!");
     }
 
-    public float CalculateAverage(int a, int b)
+    public float CalculateAverage(int[] array)
     {
-        var a1 = (float)a;
-        var b1 = (float)b;
-        return (a1 + b1) / 2;
+        var tmp = 0;
+        foreach (var i in array)
+        {
+            tmp += i;
+        }
+        var length = (float)(array.Length);
+        return (tmp / length);
     }
+
 
     public int GetMaximumValue(int[] array)
     {
