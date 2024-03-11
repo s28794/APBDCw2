@@ -16,6 +16,7 @@ class Program
 
     public int GetMaximumValue(int[] array)
     {
+        Console.WriteLine("Dodany MaxVal");
         int tmp = 0;
         if (array.Length > 0)
         {
@@ -25,11 +26,6 @@ class Program
                 {
                     tmp = array[i];
                 }
-                if (array[i] == 0)
-                {
-                    isZero = true;
-                }
-
                 if (array[i] > tmp || array[i] == tmp)
                 {
                     tmp = array[i];
@@ -40,4 +36,5 @@ class Program
         Console.WriteLine("Empty array");
         return 0; 
         
+        }
     }
