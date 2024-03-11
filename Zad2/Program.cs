@@ -38,5 +38,6 @@ class Program
             return tmp;  
         }
         Console.WriteLine("Empty array");
-        return 0;
+        return 0; 
+        
     }
